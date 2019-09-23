@@ -1,0 +1,26 @@
+mode: set
+go-doubly-linked-list/list.go:9.36,11.2 1 1
+go-doubly-linked-list/list.go:13.29,15.2 1 1
+go-doubly-linked-list/list.go:17.29,19.2 1 1
+go-doubly-linked-list/list.go:26.26,29.15 3 1
+go-doubly-linked-list/list.go:33.2,33.15 1 1
+go-doubly-linked-list/list.go:29.15,32.3 2 1
+go-doubly-linked-list/list.go:36.30,38.2 1 1
+go-doubly-linked-list/list.go:40.29,42.2 1 1
+go-doubly-linked-list/list.go:44.41,51.21 3 1
+go-doubly-linked-list/list.go:51.21,53.3 1 1
+go-doubly-linked-list/list.go:53.8,55.3 1 1
+go-doubly-linked-list/list.go:58.40,65.21 3 1
+go-doubly-linked-list/list.go:65.21,67.3 1 1
+go-doubly-linked-list/list.go:67.8,69.3 1 1
+go-doubly-linked-list/list.go:72.34,74.17 2 1
+go-doubly-linked-list/list.go:74.17,75.19 1 1
+go-doubly-linked-list/list.go:91.3,91.17 1 1
+go-doubly-linked-list/list.go:75.19,76.42 1 1
+go-doubly-linked-list/list.go:89.4,89.9 1 1
+go-doubly-linked-list/list.go:76.42,79.5 2 1
+go-doubly-linked-list/list.go:79.10,79.30 1 1
+go-doubly-linked-list/list.go:79.30,82.5 2 1
+go-doubly-linked-list/list.go:82.10,82.30 1 1
+go-doubly-linked-list/list.go:82.30,85.5 2 1
+go-doubly-linked-list/list.go:85.10,88.5 2 1

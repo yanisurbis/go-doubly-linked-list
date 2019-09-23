@@ -1,5 +1,7 @@
 # Doubly linked list​
 
+- run tests with `go test -coverprofile=cover.out && go tool cover -html=cover.out -o cover.html`
+
 ```
 List // тип контейнер
 Len() // длинна списка
