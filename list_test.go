@@ -6,7 +6,7 @@ import (
 )
 
 func TestNode_Value(t *testing.T) {
-	l := &List{}
+	var l List
 	l.PushFront(1)
 
 	elm := l.First()
@@ -14,7 +14,7 @@ func TestNode_Value(t *testing.T) {
 }
 
 func TestNode_Next(t *testing.T) {
-	l := &List{}
+	var l List
 	l.PushFront(1)
 	l.PushFront(2)
 
@@ -23,7 +23,7 @@ func TestNode_Next(t *testing.T) {
 }
 
 func TestNode_Last(t *testing.T) {
-	l := &List{}
+	var l List
 	l.PushFront(1)
 	l.PushFront(2)
 
@@ -32,30 +32,30 @@ func TestNode_Last(t *testing.T) {
 }
 
 func TestList_Len(t *testing.T) {
-	l1 := &List{}
+	var l1 List
 	assert.Equal(t, l1.Len(), 0, "works with empty list")
 
-	l2 := &List{}
+	var l2 List
 	l2.PushFront(1)
 	l2.PushFront(1)
 	assert.Equal(t, l2.Len(), 2, "works with non empty list")
 }
 
 func TestList_First(t *testing.T) {
-	l1 := &List{}
+	var l1 List
 	assert.Nil(t, l1.First(), "works with empty list")
 
-	l2 := &List{}
+	var l2 List
 	l2.PushFront(1)
 	l2.PushFront(2)
 	assert.Equal(t, l2.First().Value(), 2, "works with non empty list")
 }
 
 func TestList_Last(t *testing.T) {
-	l1 := &List{}
+	var l1 List
 	assert.Nil(t, l1.Last(), "works with empty list")
 
-	l2 := &List{}
+	var l2 List
 	l2.PushFront(1)
 	l2.PushFront(2)
 	assert.Equal(t, l2.Last().Value(), 1, "works with non empty list")
@@ -63,7 +63,7 @@ func TestList_Last(t *testing.T) {
 
 func TestList_PushFront(t *testing.T) {
 	t.Run("works correctly with only one element", func(t *testing.T) {
-		l1 := &List{}
+		var l1 List
 		l1.PushFront(100)
 
 		assert.Equal(t, l1.Len(), 1)
@@ -72,7 +72,7 @@ func TestList_PushFront(t *testing.T) {
 	})
 
 	t.Run("works correctly with multiple elements", func(t *testing.T) {
-		l2 := &List{}
+		var l2 List
 		l2.PushFront(100)
 		l2.PushFront(200)
 
@@ -84,7 +84,7 @@ func TestList_PushFront(t *testing.T) {
 
 func TestList_PushBack(t *testing.T) {
 	t.Run("works correctly with only one element", func(t *testing.T) {
-		l1 := &List{}
+		var l1 List
 		l1.PushBack(100)
 
 		assert.Equal(t, l1.Len(), 1)
@@ -93,7 +93,7 @@ func TestList_PushBack(t *testing.T) {
 	})
 
 	t.Run("works correctly with multiple elements", func(t *testing.T) {
-		l2 := &List{}
+		var l2 List
 		l2.PushBack(100)
 		l2.PushBack(200)
 
@@ -105,7 +105,7 @@ func TestList_PushBack(t *testing.T) {
 
 func TestList_Remove(t *testing.T) {
 	t.Run("works with empty list", func(t *testing.T) {
-		l := &List{}
+		var l List
 
 		r := Node{}
 		l.Remove(r)
@@ -114,7 +114,7 @@ func TestList_Remove(t *testing.T) {
 	})
 
 	t.Run("works with non existing values", func(t *testing.T) {
-		l := &List{}
+		var l List
 		l.PushFront(100)
 		l.PushFront(200)
 		l.PushFront(300)
@@ -133,7 +133,7 @@ func TestList_Remove(t *testing.T) {
 	})
 
 	t.Run("works with one element list", func(t *testing.T) {
-		l := &List{}
+		var l List
 		l.PushFront(1)
 		r := l.First()
 
@@ -145,7 +145,7 @@ func TestList_Remove(t *testing.T) {
 	})
 
 	t.Run("works when deleting first element", func(t *testing.T) {
-		l := &List{}
+		var l List
 		l.PushFront(100)
 		l.PushFront(200)
 		l.PushFront(300)
@@ -159,7 +159,7 @@ func TestList_Remove(t *testing.T) {
 	})
 
 	t.Run("works when deleting last element", func(t *testing.T) {
-		l := &List{}
+		var l List
 		l.PushFront(100)
 		l.PushFront(200)
 		l.PushFront(300)
@@ -173,7 +173,7 @@ func TestList_Remove(t *testing.T) {
 	})
 
 	t.Run("works in general case", func(t *testing.T) {
-		l := &List{}
+		var l List
 		l.PushFront(100)
 		l.PushFront(200)
 		l.PushFront(300)
